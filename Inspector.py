@@ -115,7 +115,7 @@ addr = 0  # Relative address of the PE/COFF Headers (given by e_lfanew)
 OUTPUT += "MS-DOS HEADERs :\n"
 OUTPUT += separator
 OUTPUT += " MS-DOS header :\n"
-# The index at which we will read the next field in the HEXA string
+# The index at which we will read the next field in the binary
 ndx = 0
 for count, field in enumerate(_IMAGE_DOS_HEADER):
     if (type(field[1]) == type(1)):
