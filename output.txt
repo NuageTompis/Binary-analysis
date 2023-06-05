@@ -7,7 +7,7 @@ MS-DOS HEADERs :
   Relocations : 0
   Size of header in paragraphs : 4
   Minimum extra paragraphs needed : 0
-  Maximum extra paragraphs needed : 4335
+  Maximum extra paragraphs needed : 65535
   Initial (relative) SS value : 0
   Initial SP value : 184
   Checksum : 0
@@ -15,43 +15,43 @@ MS-DOS HEADERs :
   Initial (relative) CS value : 0
   File address of relocation table : 64
   Overlay number : 0
-  Reserved words :    ,    ,    ,   
+  Reserved words : 0x0 , 0x0 , 0x0 , 0x0 , 
   OEM identifier (for e_oeminfo) : 0
   OEM information; e_oemid specific : 0
-  Reserved words :    ,    ,    ,    ,    ,    ,    ,    ,    ,   
+  Reserved words : 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 0x0 , 
   File address of new exe header : 232
  ________
  MS-DOS stub :
           !  L !This program cannot be run in DOS mode.   $         T   :   :   :   ;   :   ?   :   >   :   ;   :   ;   : W >   : W     : W 8   : Rich  :                 
  ________
  ________
-PE/COFF HEADERs :
+PE/COFF Headers :
  ________
  PE signature :
   PE  
  ________
  PE file header :
-  Machine : 92
+  Machine : 332
   NumberOfSections : 9
-  TimeDateStamp : 421264
+  TimeDateStamp : 1680180304
   PointerToSymbolTable : 0
   NumberOfSymbols : 0
   SizeOfOptionalHeader : 224
-  Characteristics : 18
+  Characteristics : 258
  ________
  PE optional header :
-  Magic : 27
+  Magic : 0x10b
   MajorLinkerVersion : 14
   MinorLinkerVersion : 29
-  SizeOfCode : 1376
-  SizeOfInitializedData : 1120
+  SizeOfCode : 22016
+  SizeOfInitializedData : 17920
   SizeOfUninitializedData : 0
-  AddressOfEntryPoint : 547
-  BaseOfCode : 256
-  BaseOfData : 256
-  ImageBase : 16384
-  SectionAlignment : 256
-  FileAlignment : 32
+  AddressOfEntryPoint : 69667
+  BaseOfCode : 4096
+  BaseOfData : 4096
+  ImageBase : 4194304
+  SectionAlignment : 4096
+  FileAlignment : 512
   MajorOperatingSystemVersion : 6
   MinorOperatingSystemVersion : 0
   MajorImageVersion : 0
@@ -59,14 +59,15 @@ PE/COFF HEADERs :
   MajorSubsystemVersion : 6
   MinorSubsystemVersion : 0
   Win32VersionValue : 0
-  SizeOfImage : 512
-  SizeOfHeaders : 64
+  SizeOfImage : 131072
+  SizeOfHeaders : 1024
   CheckSum : 0
   Subsystem : 3
-  DllCharacteristics : 2128
-  SizeOfStackReserve : 4096
-  SizeOfStackCommit : 256
-  SizeOfHeapReserve : 4096
-  SizeOfHeapCommit : 256
+  DllCharacteristics : 33088
+  SizeOfStackReserve : 1048576
+  SizeOfStackCommit : 4096
+  SizeOfHeapReserve : 1048576
+  SizeOfHeapCommit : 4096
   LoaderFlags : 0
   NumberOfRvaAndSizes : 16
+  DataDirectory : 0x0 , 0x500001b1c4 , 0x43c0001e000 , 0x0 , 0x0 , 0x39c0001f000 , 0x38000184f8 , 0x0 , 0x0 , 0x0 , 0x4000018530 , 0x0 , 0x1c40001b000 , 0x0 , 0x0 , 0x0 , 
